@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nobel Laureates</title>
+</head>
+<body>
+    <h1>Nobel Laureates</h1>
+    <ul>
+        {% for laureate in laureates %}
+            <li><strong>{{ laureate.name }}</strong> ({{ laureate.year }}) - {{ laureate.contribution }}.</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
